@@ -31,3 +31,14 @@
 大胃王中华区形象大使、
 九年义务教育编外人员、
 德智体美劳全面不发展代表、
+<div class="cover">
+      <div class="clock"></div>
+      <div class='hours'></div>
+      <div class='seconds'></div>
+      <div class='minutes'></div>
+      <div class="site-name">
+        <div class="site-name__inner">
+          <div class="btn">Blog</div>
+        </div>
+      </div>
+    </div>
