@@ -31,14 +31,7 @@
 大胃王中华区形象大使、
 九年义务教育编外人员、
 德智体美劳全面不发展代表、
-<div class="cover">
-      <div class="clock"></div>
-      <div class='hours'></div>
-      <div class='seconds'></div>
-      <div class='minutes'></div>
-      <div class="site-name">
-        <div class="site-name__inner">
-          <div class="btn">Blog</div>
-        </div>
-      </div>
-    </div>
+    
+    <title>关于2020-2021学年第二学期公共选修课网上选课的通知</title>
+<center>关于2020-2021学年第二学期公共选修课网上选课的通知<br />
+发布人：袁艳红 <br />
