@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://huoliuxuan.github.io</id>
     <title>萱萱的静态博客</title>
-    <updated>2021-03-29T01:49:03.149Z</updated>
+    <updated>2021-04-24T03:10:38.074Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://huoliuxuan.github.io"/>
     <link rel="self" href="https://huoliuxuan.github.io/atom.xml"/>
@@ -11,6 +11,36 @@
     <logo>https://huoliuxuan.github.io/images/avatar.png</logo>
     <icon>https://huoliuxuan.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, 萱萱的静态博客</rights>
+    <entry>
+        <title type="html"><![CDATA[2021.4.23]]></title>
+        <id>https://huoliuxuan.github.io/post/2021423/</id>
+        <link href="https://huoliuxuan.github.io/post/2021423/">
+        </link>
+        <updated>2021-04-24T02:55:05.000Z</updated>
+        <content type="html"><![CDATA[<center>
+世界读书日
+</center>
+<figure data-type="image" tabindex="1"><img src="https://huoliuxuan.github.io/post-images/1619233186677.png" alt="" loading="lazy"></figure>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2021.4.14]]></title>
+        <id>https://huoliuxuan.github.io/post/2021414/</id>
+        <link href="https://huoliuxuan.github.io/post/2021414/">
+        </link>
+        <updated>2021-04-24T02:18:33.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://huoliuxuan.github.io/post-images/1619230742441.jpg" alt="" loading="lazy"></figure>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2021.4.7]]></title>
+        <id>https://huoliuxuan.github.io/post/202147/</id>
+        <link href="https://huoliuxuan.github.io/post/202147/">
+        </link>
+        <updated>2021-04-24T02:17:18.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://huoliuxuan.github.io/post-images/1619230663209.jpg" alt="" loading="lazy"></figure>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2021.3.28]]></title>
         <id>https://huoliuxuan.github.io/post/2021328/</id>
