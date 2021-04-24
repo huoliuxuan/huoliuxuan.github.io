@@ -1,0 +1,419 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>代码 | 萱萱的静态博客</title>
+<link rel="shortcut icon" href="https://huoliuxuan.github.io/favicon.ico?v=1619261567135">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://huoliuxuan.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="代码 | 萱萱的静态博客 - Atom Feed" href="https://huoliuxuan.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="#include 
+#include 
+#include 
+using namespace std;
+class base         			//定义一个基类
+{protected:
+string name;    		//姓名
+str..." />
+    <meta name="keywords" content="study" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://huoliuxuan.github.io">
+  <img class="avatar" src="https://huoliuxuan.github.io/images/avatar.png?v=1619261567135" alt="">
+  </a>
+  <h1 class="site-title">
+    萱萱的静态博客
+  </h1>
+  <p class="site-description">
+    欢迎来到我的世界
+
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="https://huoliuxuan.github.io" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="https://huoliuxuan.github.io/post/2021328" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="https://huoliuxuan.github.io/tags" class="menu" target="_blank">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+        <a href="https://huoliuxuan.github.io" target="_blank">
+          <i class="ri-github-line"></i>
+        </a>
+      
+    
+      
+    
+      
+        <a href="https://weibo.com/u/7412680244" target="_blank">
+          <i class="ri-weibo-line"></i>
+        </a>
+      
+    
+      
+        <a href="https://www.zhihu.com/people/wen-mou-33-50" target="_blank">
+          <i class="ri-zhihu-line"></i>
+        </a>
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              代码
+            </h2>
+            <div class="post-info">
+              <span>
+                2021-04-24
+              </span>
+              <span>
+                6 min read
+              </span>
+              
+                <a href="https://huoliuxuan.github.io/tag/cXNZNjcrU/" class="post-tag">
+                  # study
+                </a>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>#include <iostream><br>
+#include <string><br>
+#include <iomanip><br>
+using namespace std;<br>
+class base         			//定义一个基类<br>
+{protected:<br>
+string name;    		//姓名<br>
+string sex;        		//性别<br>
+int age;            			//年龄<br>
+public:<br>
+void set(char *name1,char *sex1,int age1)<br>
+{<br>
+name=name1;<br>
+age=age1;<br>
+}<br>
+void show()<br>
+{<br>
+cout&lt;&lt;&quot;Base class value:&quot;&lt;&lt;name&lt;&lt;&quot;,&quot;&lt;&lt;sex&lt;&lt;&quot;,&quot;&lt;&lt;age&lt;&lt;endl;</p>
+<pre><code>}
+</code></pre>
+<p>};<br>
+class teacher:public base     	//基类派生出教师类<br>
+{  int sno;            			//工号<br>
+string zc;         		//职称<br>
+double wages;          		//工资<br>
+public:<br>
+void set(char *name1,char *sex1,int age1,int sno1,char *zc1,double wages1)<br>
+{<br>
+base::set(name1,sex1,age1);<br>
+sno=sno1;<br>
+zc=zc1;<br>
+wages=wages1;<br>
+}<br>
+void show()<br>
+{<br>
+base::show();<br>
+cout&lt;&lt;&quot;Derived class teacher value:&quot;&lt;&lt;sno&lt;&lt;&quot;,&quot;&lt;&lt;zc&lt;&lt;&quot;,&quot;&lt;&lt;wages&lt;&lt;endl;<br>
+}<br>
+};<br>
+class student :public base     	//基类派生出学生类<br>
+{  int sno;        			//学号<br>
+string bj;    			//班级<br>
+string zy;    			//专业<br>
+double score;   			//入学成绩<br>
+public:<br>
+void set(char *name1,char *sex1,int age1,int sno1,char *bj1,char *zy1,double score1)<br>
+{<br>
+base::set(name1,sex1,age1);<br>
+sno=sno1;<br>
+bj=bj1;<br>
+zy=zy1;<br>
+score=score1;<br>
+}<br>
+void show()<br>
+{<br>
+base::show();<br>
+cout&lt;&lt;&quot;Derived class student value:&quot;&lt;&lt;sno&lt;&lt;&quot;,&quot;&lt;&lt;bj&lt;&lt;&quot;,&quot;&lt;&lt;zy&lt;&lt;&quot;,&quot;&lt;&lt;score&lt;&lt;endl;<br>
+}<br>
+};<br>
+void main()</p>
+<p>{<br>
+base b1;<br>
+teacher t1;<br>
+student s1;<br>
+b1.set(&quot;王元强&quot;,&quot;男&quot;,42);<br>
+b1.show();<br>
+t1.set(&quot;王元强&quot;,&quot;男&quot;,42,1239,&quot;副教授&quot;,6666);<br>
+t1.show();<br>
+s1.set(&quot;王元强&quot;,&quot;男&quot;,42,202014,&quot;20401&quot;,&quot;医学信息工程&quot;,630);<br>
+s1.show();<br>
+system(&quot;pause&quot;);<br>
+}</p>
+<p>#include<iostream><br>
+#include<string><br>
+#include<iomanip><br>
+using namespace std;<br>
+class base         			//定义一个基类<br>
+{protected:<br>
+char name[20];    		//姓名<br>
+char sex[3];        		//性别<br>
+int age;            			//年龄<br>
+public:<br>
+void set(char *name1,char *sex1,int age1)<br>
+{<br>
+strcpy(name,name1);<br>
+strcpy(sex,sex1);<br>
+age=age1;<br>
+}<br>
+base(char *name1,char *sex1,int age1)<br>
+{<br>
+strcpy(name,name1);<br>
+strcpy(sex,sex1);<br>
+age=age1;<br>
+}<br>
+void show()<br>
+{<br>
+cout&lt;&lt;&quot;Base class value:&quot;&lt;&lt;name&lt;&lt;&quot;,&quot;&lt;&lt;sex&lt;&lt;&quot;,&quot;&lt;&lt;age&lt;&lt;endl;</p>
+<pre><code>}
+base(){}
+</code></pre>
+<p>};<br>
+class teacher:public base     	//基类派生出教师类<br>
+{  int sno;            			//工号<br>
+char zc[20];         		//职称<br>
+double wages;          		//工资<br>
+public:<br>
+teacher (char *name1,char *sex1,int age1,int sno1,char *zc1,double wages1)<br>
+{<br>
+base::set(name1,sex1,age1);<br>
+sno=sno1;<br>
+strcpy(zc,zc1);<br>
+wages=wages1;<br>
+}</p>
+<pre><code>void show()
+{
+
+
+	base::show();
+	cout&lt;&lt;&quot;Derived class teacher value:&quot;&lt;&lt;sno&lt;&lt;&quot;,&quot;&lt;&lt;zc&lt;&lt;&quot;,&quot;&lt;&lt;wages&lt;&lt;endl;
+}
+</code></pre>
+<p>};<br>
+class student :public base     	//基类派生出学生类<br>
+{  int sno;        			//学号<br>
+char bj[10];    			//班级<br>
+char zy[10];    			//专业<br>
+double score;   			//入学成绩<br>
+public:<br>
+student (char *name1,char *sex1,int age1,int sno1,char *bj1,char *zy1,double score1)<br>
+{<br>
+base::set(name1,sex1,age1);<br>
+sno=sno1;<br>
+strcpy(bj,bj1);<br>
+strcpy(zy,zy1);<br>
+score=score1;<br>
+}<br>
+void show()<br>
+{<br>
+base::show();<br>
+cout&lt;&lt;&quot;Derived class student value:&quot;&lt;&lt;sno&lt;&lt;&quot;,&quot;&lt;&lt;bj&lt;&lt;&quot;,&quot;&lt;&lt;zy&lt;&lt;&quot;,&quot;&lt;&lt;score&lt;&lt;endl;<br>
+}<br>
+};<br>
+void main()</p>
+<p>{<br>
+base b1(&quot;王元强&quot;,&quot;男&quot;,42);<br>
+b1.show();<br>
+teacher t1(&quot;王元强&quot;,&quot;男&quot;,42,1239,&quot;副教授&quot;,6666);t1.show();<br>
+student s1(&quot;王元强&quot;,&quot;男&quot;,42,202014,&quot;20401&quot;,&quot;医学信息工程&quot;,630);<br>
+s1.show();<br>
+system(&quot;pause&quot;);<br>
+}</p>
+<p>实验4</p>
+<p>#include<iostream><br>
+#include<string><br>
+#include<iomanip><br>
+using namespace std;<br>
+class base         			//定义一个基类<br>
+{protected:<br>
+string name;    		//姓名<br>
+string sex;        		//性别<br>
+int age;            			//年龄<br>
+public:</p>
+<pre><code>base (string name1,string sex1,int age1)
+{
+	name=name1;
+	sex=sex1;
+	age=age1;
+}
+void set(string name1,string sex1,int age1)
+{	
+	name=name1;
+	sex=sex1;
+	age=age1;
+}
+void show()
+{
+	cout&lt;&lt;&quot;Base class value:&quot;&lt;&lt; name &lt;&lt;&quot;,&quot;&lt;&lt;sex&lt;&lt;&quot;,&quot;&lt;&lt; age &lt;&lt;endl;
+
+}
+base(){}
+</code></pre>
+<p>};<br>
+class teacher:public base     	//基类派生出教师类<br>
+{  int sno;            			//工号<br>
+string zc;         		//职称<br>
+double wages;          		//工资<br>
+public:<br>
+teacher (string name1,string sex1,int age1,int sno1,string zc1,double wages1)<br>
+{<br>
+base::set( name1, sex1, age1);<br>
+sno=sno1;<br>
+zc=zc1;<br>
+wages=wages1;<br>
+}</p>
+<pre><code>void show()
+{
+	base::show();
+	cout&lt;&lt;&quot;Derived class teacher value:&quot;&lt;&lt;sno&lt;&lt;&quot;,&quot;&lt;&lt;zc&lt;&lt;&quot;,&quot;&lt;&lt;wages&lt;&lt;endl;
+}
+</code></pre>
+<p>};<br>
+class student :public base     	//基类派生出学生类<br>
+{  int sno;        			//学号<br>
+string bj;    			//班级<br>
+string zy;    			//专业<br>
+double score;   			//入学成绩<br>
+public:<br>
+student (string name1,string sex1,int age1,int sno1,string bj1,string zy1,double score1)<br>
+{<br>
+base::set( name1, sex1, age1);<br>
+sno=sno1;<br>
+bj=bj1;<br>
+zy=zy1;<br>
+score=score1;<br>
+}<br>
+void show()<br>
+{<br>
+base::show();<br>
+cout&lt;&lt;&quot;Derived class student value:&quot;&lt;&lt;sno&lt;&lt;&quot;,&quot;&lt;&lt;bj&lt;&lt;&quot;,&quot;&lt;&lt;zy&lt;&lt;&quot;,&quot;&lt;&lt;score&lt;&lt;endl;<br>
+}<br>
+};<br>
+void main()</p>
+<p>{<br>
+base b1(&quot;王元强&quot;,&quot;男&quot;,42);<br>
+b1.show();<br>
+teacher t1(&quot;王元强&quot;,&quot;男&quot;,42,1239,&quot;副教授&quot;,6666);<br>
+t1.show();<br>
+student s1(&quot;王元强&quot;,&quot;男&quot;,42,202014,&quot;20401&quot;,&quot;医学信息工程&quot;,630);<br>
+s1.show();<br>
+system(&quot;pause&quot;);<br>
+}</p>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://huoliuxuan.github.io/post/2021423/">
+              <h3 class="post-title">
+                2021.4.23
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://huoliuxuan.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
