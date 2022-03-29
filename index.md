@@ -31,8 +31,8 @@
 大胃王中华区形象大使、
 九年义务教育编外人员、
 德智体美劳全面不发展代表、
+    <a class="git-link" href="https://www.sohu.com/a/475207695_166680#:~:text=MIPS%E6%8C%87%E4%BB%A4%E9%9B%86%E7%AE%80%E5%8F%B2%EF%BC%9A%E4%BB%8ECISC%E3%80%81RISC%E4%B9%8B%E4%BA%89%EF%BC%8C%E5%88%B0%E9%97%AD%E6%BA%90%E3%80%81%E5%BC%80%E6%BA%90%E5%88%86%E6%AD%A7"></a>
     
-    <title>萱萱的博客</title>
 
 <p align="left">二、选课要求（详细要求参照河北北方学院通识教育选修课管理规定）<br /><br />
 （1）每学期最多选2门课，学分不能超过4学分；<br />
